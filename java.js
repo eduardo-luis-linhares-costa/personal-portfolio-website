@@ -1,15 +1,5 @@
 let botão = document.getElementById('botao');
 
-  //const keyPlay = (event) => {    event.target.style.backgroundColor = 'red' }
-  
- // const keyReturn = (event) => {    event.target.style.backgroundColor = ''}
- 
-  
-  //const changeColor = (note) => {note.onmousedown = keyPlay ;  note.onmouseup = keyReturn;  }
-
-  //changeColor(botão);
-
-
   let imagemEsposende = document.getElementById('imagem-botao')
   imagemEsposende.hidden = true;
 
@@ -17,14 +7,20 @@ let botão = document.getElementById('botao');
 
  let imageOn = function() {imagemEsposende.hidden = false;}
 
-
-
-//botão.onclick = function() {
-//imagemEsposende.hidden = false;}
-
 const imageOnAndOff = function(botao) {
 botao.onmouseup = imageOff ;
 botao.onmousedown = imageOn;
 }
 
-imageOnAndOff(botão)
+imageOnAndOff(botão);
+
+//let form = document.getElementById('fname')
+
+
+document.getElementById('resposta').onclick = function() {
+  let userInput = document.getElementById('year');
+  let message = document.getElementById('message');
+
+  if( userInput.value === '1994') {
+  message.innerHTML = `${userInput.value} is CORRECT` } else { message.innerHTML = `${userInput.value} isn't the right year`}
+}
