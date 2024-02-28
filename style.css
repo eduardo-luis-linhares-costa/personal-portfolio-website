@@ -31,3 +31,11 @@ header ul{ display: flex; gap: 40px; list-style: none;}
 .three, .four{ width: 100%; border: 3px solid black; height: 250px;}
 
 .three{margin-bottom: 20px;}
+
+.hobbies{display: flex; justify-content: flex-start; margin-bottom: -8px; margin-left: 100px; gap: 250px;}
+.hobbies-terra-e-mar{display: flex; gap: 20px; justify-content: center;}
+.hobbies-terra-e-mar img{height: 170px; width: 274px;} 
+
+#desporto-mar{ cursor: pointer;}
+#desporto-terra{ cursor: pointer;}
+#desportoOne{position: relative;}
